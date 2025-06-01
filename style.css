@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.flashcard-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.flashcard {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    position: relative; /* For front/back positioning if you do flip effect */
+    perspective: 1000px; /* For 3D flip */
+}
+
+/* Initially hide the back or position it for a flip */
+.flashcard .back {
+    display: none; /* Simple approach: hide/show */
+    /* For flip effect, you'd use transform, transition, etc. */
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
